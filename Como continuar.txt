@@ -1,0 +1,7 @@
+Ajeitar os form de envio
+- Usar prevent default para evitar o reinício da página
+- Localizar em qual chave colocar o atributo `value` de cada campo de acordo com o atributo `name`, gerar o id automaticamente
+- Recarregar a sessão do form
+
+Ajeitar os botões de ação em `ui.js`
+- Para facilitar, passar o id e o nome da tabela para o form de edição que usa o id para carregar os dados atuais nos campos

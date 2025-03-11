@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planejador de Interclasse</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <!-- ----- Scripts ----- -->
+  <!-- --- Auxiliares --- -->
+  <script src="./js/auxiliares.js"></script>
+  <!-- --- Bibliotecas --- -->
+  <script type="text/javascript" src="./js/bibliotecas/purify.min.js"></script>
+  <!-- --- Banco de dados --- -->
+  <script src="./js/db_auxiliar.js"></script>
+  <script src="./js/db.js"></script>
+  <!-- --- Interface do Usuário --- -->
+  <script src="./js/ui.js"></script>
+  <!-- --- Principal --- -->
+  <script src="./js/scripts.js"></script>
+  <!-- ------------------- -->
+  <body>
+    <h1>Planejador de Interclasse</h1>
+    <!-- ----- Modalidades ----- -->
+    <section class="session-modalidades">
+      <h2>Modalidades</h2>
+      <form onsubmit="enviarForm(bancoDeDados, this, event)">
+        <input name="nome" placeholder="Nome" />
+        <input name="duracao_partida" placeholder="Duração das partidas" />
+        <input name="equipes_por_grupo" placeholder="Equipes por grupo" />
+        <input type="submit" />
+      </form>
+      <form>
+        <input placeholder="ID" disabled />
+        <input placeholder="Nome" />
+        <input placeholder="Duração das partidas" />
+        <input placeholder="Equipes por grupo" />
+        <input type="submit" />
+      </form>
+      <table id="tabela-modalidades">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Duração das partidas</th>
+            <th>Equipes por grupo</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+    <!-- ----- Equipes ----- -->
+    <section class="session-equipes">
+      <h2>Equipes</h2>
+      <form>
+        <select id="select-session-equipes-adicionar"></select>
+        <select id="select-session-equipes-adicionar-modalidades"></select>
+        <input placeholder="Grupo" />
+        <input type="submit" />
+      </form>
+      <form>
+        <input placeholder="ID" disabled />
+        <select id="select-session-equipes-editar"></select>
+        <select id="select-session-equipes-editar-modalidades"></select>
+        <input placeholder="Grupo" />
+        <input type="submit" />
+      </form>
+      <table id="tabela-equipes">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Sala</th>
+            <th>Modalidade</th>
+            <th>Grupo</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+    <!-- ----- Grupos ----- -->
+    <section class="session-grupos">
+      <h2>Grupos</h2>
+      <form>
+        <input placeholder="Nome" />
+        <select id="select-session-grupos-adicionar-modalidades"></select>
+        <input type="submit" />
+      </form>
+      <form>
+        <input placeholder="ID" disabled />
+        <input placeholder="Nome" />
+        <select id="select-session-grupos-editar-modalidades"></select>
+        <input type="submit" />
+      </form>
+      <table id="tabela-grupos">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Modalidade</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+    <!-- ----- Horários ----- -->
+    <section class="session-horarios">
+      <h2>Horários</h2>
+      <p>...</p>
+    </section>
+  </body>
+</html>
