@@ -6,11 +6,43 @@
     <title>Planejador de Interclasse</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/components.css" />
   </head>
   <!-- ----- Scripts ----- -->
+  <script src="js/components.js"></script>
   <!-- ------------------- -->
   <body>
+    <header id="header"></header>
     <h1>Planejador de Interclasse</h1>
+
+    <!-- ----- Categorias ----- -->
+    <section>
+      <h2>Categorias</h2>
+      <form>
+        <input placeholder="Nome" />
+        <input type="submit" />
+      </form>
+      <!-- --- Tabela --- -->
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Feminino</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Masculino</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Misto</td>
+        </tr>
+      </table>
+    </section>
+
     <!-- ----- Modalidades ----- -->
     <section>
       <h2>Modalidades</h2>
@@ -25,79 +57,60 @@
         <input placeholder="Equipes por grupo" />
         <input type="submit" />
       </form>
-      <form>
-        <input placeholder="ID" disabled />
-        <input placeholder="Nome" />
-        <select>
-          <option>Feminino</option>
-          <option>Masculino</option>
-          <option>Misto</option>
-        </select>
-        <input placeholder="Duração das partidas" />
-        <input placeholder="Equipes por grupo" />
-        <input type="submit" />
-      </form>
+      <!-- --- Tabela --- -->
       <table>
         <tr>
           <th>ID</th>
           <th>Nome</th>
+          <th>Categoria</th>
           <th>Duração das partidas</th>
           <th>Equipes por grupo</th>
         </tr>
         <tr>
           <td>1</td>
-          <td>Futsal</td>
+          <td>🏀Basquete</td>
+          <td>Masculino</td>
+          <td>10</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>⚽ Futsal</td>
           <td>Masculino</td>
           <td>20</td>
           <td>4</td>
         </tr>
         <tr>
-          <td>2</td>
-          <td>Futsal</td>
+          <td>3</td>
+          <td>⚽ Futsal</td>
           <td>Feminino</td>
           <td>20</td>
           <td>3</td>
         </tr>
         <tr>
-          <td>3</td>
-          <td>Vôlei</td>
+          <td>4</td>
+          <td>🏐 Vôlei</td>
           <td>Misto</td>
           <td>20</td>
           <td>3</td>
         </tr>
-        <tr>
-          <td>4</td>
-          <td>Basquete</td>
-          <td>Masculino</td>
-          <td>10</td>
-          <td>3</td>
-        </tr>
       </table>
     </section>
+
     <!-- ----- Grupos ----- -->
     <section>
       <h2>Grupos</h2>
       <form>
         <input placeholder="Nome" />
         <select>
-          <option>Futsal | Masculino</option>
-          <option>Futsal | Feminino</option>
-          <option>Vôlei | Misto</option>
-          <option>Basquete | Masculino</option>
+          <option>🏀 Basquete | Masculino</option>
+          <option>⚽ Futsal | Masculino</option>
+          <option>⚽ Futsal | Feminino</option>
+          <option>🏐 Vôlei | Misto</option>
         </select>
         <input type="submit" />
       </form>
-      <form>
-        <input placeholder="ID" disabled />
-        <input placeholder="Nome" />
-        <select>
-          <option>Futsal | Masculino</option>
-          <option>Futsal | Feminino</option>
-          <option>Vôlei | Misto</option>
-          <option>Basquete | Masculino</option>
-        </select>
-        <input type="submit" />
-      </form>
+      <!-- --- Tabela --- -->
       <table>
         <tr>
           <th>ID</th>
@@ -106,6 +119,7 @@
         </tr>
       </table>
     </section>
+
     <!-- ----- Equipes ----- -->
     <section>
       <h2>Equipes</h2>
@@ -117,31 +131,15 @@
           <option>1º Ano D</option>
         </select>
         <select>
-          <option>Futsal | Masculino</option>
-          <option>Futsal | Feminino</option>
-          <option>Vôlei | Misto</option>
-          <option>Basquete | Masculino</option>
+          <option>🏀 Basquete | Masculino</option>
+          <option>⚽ Futsal | Masculino</option>
+          <option>⚽ Futsal | Feminino</option>
+          <option>🏐 Vôlei | Misto</option>
         </select>
         <input placeholder="Grupo" />
         <input type="submit" />
       </form>
-      <form>
-        <input placeholder="ID" disabled />
-        <select>
-          <option>1º Ano A</option>
-          <option>1º Ano B</option>
-          <option>1º Ano C</option>
-          <option>1º Ano D</option>
-        </select>
-        <select>
-          <option>Futsal | Masculino</option>
-          <option>Futsal | Feminino</option>
-          <option>Vôlei | Misto</option>
-          <option>Basquete | Masculino</option>
-        </select>
-        <input placeholder="Grupo" />
-        <input type="submit" />
-      </form>
+      <!-- --- Tabela --- -->
       <table>
         <tr>
           <th>ID</th>
@@ -151,6 +149,7 @@
         </tr>
       </table>
     </section>
+
     <!-- ----- Horários ----- -->
     <section>
       <h2>Horários</h2>

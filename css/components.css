@@ -1,0 +1,27 @@
+/* Estilização da top bar */
+#top-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#top-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#top-bar ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#top-bar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#top-bar ul li a:hover {
+  color: #ccc;
+}

@@ -1,3 +1,12 @@
+:root {
+  --cor-1: #4c98e0;
+  --cor-2: #e1934d;
+  --cor-3: #4ce0ca;
+  --cor-5: #505050;
+  --cor-5: #303030;
+  --cor-6: #202020;
+}
+
 /* ----- Geral ----- */
 body {
   background-color: black;
@@ -55,7 +64,7 @@ select {
 
 /* ----- Tabela ----- */
 table {
-  min-height: 100px;
+  min-height: 50px;
   background-color: #202020;
 }
 
