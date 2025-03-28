@@ -3,7 +3,10 @@
   background-color: #333;
   color: #fff;
   padding: 10px;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #top-bar ul {
@@ -15,6 +18,10 @@
 #top-bar ul li {
   display: inline-block;
   margin-right: 20px;
+}
+
+#top-bar ul li:last-child {
+  margin-right: 0px;
 }
 
 #top-bar ul li a {

@@ -1,10 +1,12 @@
 # Faça básico e vá melhorando, pouco a pouco!
 
+## Obs.: Usar inglês no nome dos arquivos, os comentários podem ser em português
+
 ## Ordem de criação
 
 - [x] Criar os arquivos básicos (index.html, style.css, main.js & db.js)
 - [x] Criar uma estrutura mínima em index.html e estilizar o básico em style.css
-- [x] Criar a lógica do banco de dados com IndexedDB
+- [ ] Criar a lógica do banco de dados com IndexedDB
 - [ ] Conectar o banco de dados a UI
 - [ ] Melhorar a performance, procurando erros de lógica e usando recursos mais modernos:
 
