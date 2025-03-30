@@ -1,6 +1,6 @@
 # Faça básico e vá melhorando, pouco a pouco!
 
-## Obs.: Usar inglês no nome dos arquivos, os comentários, nomes de variáveis e fontes podem ser em português
+## Obs.: Usar inglês no nome dos arquivos, os comentários, nomes de variáveis e funções podem ser em português
 
 ## Ordem de criação
 

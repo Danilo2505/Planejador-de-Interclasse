@@ -1,8 +1,8 @@
 /* Estilização da top bar */
 #top-bar {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  background-color: var(--color-background-2);
+  color: var(--color-title);
+  padding: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10,9 +10,11 @@
 }
 
 #top-bar ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 #top-bar ul li {
@@ -25,10 +27,24 @@
 }
 
 #top-bar ul li a {
-  color: #fff;
+  color: var(--color-text);
   text-decoration: none;
 }
 
 #top-bar ul li a:hover {
-  color: #ccc;
+  color: var();
+}
+
+#button-theme {
+  height: var(--theme-button-size);
+  width: var(--theme-button-size);
+  border: none;
+  border-radius: 50vh;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#button-theme > svg {
+  height: var(--theme-button-size);
+  width: var(--theme-button-size);
+  color: var(--color-text);
 }

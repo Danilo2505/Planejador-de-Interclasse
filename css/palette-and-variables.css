@@ -1,4 +1,5 @@
 :root {
+  /* ----- Colors ----- */
   --color-background-1: #151515;
   --color-background-2: #202020;
   --color-background-3: #070605;
@@ -7,4 +8,9 @@
   --color-highlight-3: #eaf9d9;
   --color-title: #ffffff;
   --color-text: #eeeeee;
+  /* ----- Sizes ----- */
+  --theme-button-size: 32px;
+  --font-size-h1: 40px;
+  --font-size-h2: 36px;
+  --font-size-text: 24px;
 }
