@@ -1,4 +1,4 @@
-/* Estilização da top bar */
+/* ----- Top Bar ----- */
 #top-bar {
   background-color: var(--color-background-2);
   color: var(--color-title);
@@ -7,6 +7,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-size: var(--font-size-text-2);
+  height: fit-content;
 }
 
 #top-bar ul {
@@ -19,32 +21,53 @@
 
 #top-bar ul li {
   display: inline-block;
-  margin-right: 20px;
-}
-
-#top-bar ul li:last-child {
-  margin-right: 0px;
+  color: var(--color-text);
 }
 
 #top-bar ul li a {
-  color: var(--color-text);
+  color: currentColor;
   text-decoration: none;
 }
 
 #top-bar ul li a:hover {
-  color: var();
+  color: var(--color-highlight-1);
+  border-bottom: 2px solid var(--color-highlight-1);
+}
+
+li:has(#button-theme) {
+  height: fit-content;
+  height: var(--theme-button-size);
+  width: var(--theme-button-size);
 }
 
 #button-theme {
-  height: var(--theme-button-size);
-  width: var(--theme-button-size);
+  height: 100%;
+  width: 100%;
   border: none;
   border-radius: 50vh;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--color-transparent);
+  color: var(--color-text);
 }
 
 #button-theme > svg {
   height: var(--theme-button-size);
   width: var(--theme-button-size);
-  color: var(--color-text);
+}
+
+/* ----- Button Add ----- */
+.button-add {
+  background-color: var(--color-background-5);
+  color: var(--color-background-2);
+  height: var(--add-button-size);
+  width: var(--add-button-size);
+  border: none;
+  border-radius: 50vh;
+  position: absolute;
+  right: var(--spacing-3);
+  bottom: var(--spacing-3);
+}
+
+.button-add > svg {
+  height: 50%;
+  width: 50%;
 }

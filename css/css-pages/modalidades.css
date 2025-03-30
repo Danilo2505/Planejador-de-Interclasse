@@ -1,0 +1,48 @@
+/* ----- Geral ----- */
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: auto;
+  grid-template-rows: min-content 1fr min-content;
+  gap: var(--spacing-3);
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* ----- Main ----- */
+main {
+  margin-left: var(--spacing-3);
+  margin-right: var(--spacing-3);
+  gap: var(--spacing-3);
+  display: grid;
+  grid-template-areas: "esquerda direita";
+  grid-template-columns: 3fr 7fr;
+  grid-template-rows: 100%;
+}
+
+main > div {
+  position: relative;
+  border-radius: calc(var(--add-button-size) / 2);
+  background-color: var(--color-background-2);
+}
+
+main > div:first-child {
+  grid-area: esquerda;
+}
+
+main > div:last-child {
+  grid-area: direita;
+}

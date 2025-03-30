@@ -1,16 +1,41 @@
 :root {
   /* ----- Colors ----- */
-  --color-background-1: #151515;
-  --color-background-2: #202020;
-  --color-background-3: #070605;
+  --color-background-1: #ffffff;
+  --color-background-2: #dfdfcf;
+  --color-background-3: #fdfaf6;
+  --color-background-4: #101010;
+  --color-background-5: #202020;
+  --color-background-6: #070605;
   --color-highlight-1: #f96900;
   --color-highlight-2: #22aed1;
   --color-highlight-3: #eaf9d9;
-  --color-title: #ffffff;
-  --color-text: #eeeeee;
+  --color-title: #000000;
+  --color-text: #111111;
+  --color-transparent: rgba(0, 0, 0, 0);
   /* ----- Sizes ----- */
-  --theme-button-size: 32px;
+  --add-button-size: 64px;
+  --theme-button-size: 24px;
+  --spacing-1: 24px;
+  --spacing-2: 16px;
+  --spacing-3: 12px;
   --font-size-h1: 40px;
   --font-size-h2: 36px;
-  --font-size-text: 24px;
+  --font-size-h3: 32px;
+  --font-size-h4: 30px;
+  --font-size-h5: 28px;
+  --font-size-h6: 26px;
+  --font-size-text-1: 24px;
+  --font-size-text-2: 20px;
+  --font-size-text-3: 16px;
+}
+
+[data-theme="dark"] {
+  --color-background-1: #101010;
+  --color-background-2: #202020;
+  --color-background-3: #070605;
+  --color-background-4: #ffffff;
+  --color-background-5: #dfdfcf;
+  --color-background-6: #fdfaf6;
+  --color-title: #ffffff;
+  --color-text: #eeeeee;
 }

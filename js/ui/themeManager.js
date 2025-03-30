@@ -6,7 +6,7 @@ window.onload = () => {
 
   function defineCurrentTheme(theme) {
     const darkSvg =
-      '<img src="../icons/sun-fill.svg" alt="Ícone de Lua" onload="buscarSvg(this)" />';
+      '<img src="../icons/moon-fill.svg" alt="Ícone de Lua" onload="buscarSvg(this)" />';
     const lightSvg =
       '<img src="../icons/sun-fill.svg" alt="Ícone de Sol" onload="buscarSvg(this)" />';
     document.documentElement.setAttribute("data-theme", theme);
