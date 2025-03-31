@@ -1,7 +1,7 @@
 :root {
   /* ----- Colors ----- */
   --color-background-1: #ffffff;
-  --color-background-2: #dfdfcf;
+  --color-background-2: #eeeeee;
   --color-background-3: #fdfaf6;
   --color-background-4: #101010;
   --color-background-5: #202020;
@@ -34,7 +34,7 @@
   --color-background-2: #202020;
   --color-background-3: #070605;
   --color-background-4: #ffffff;
-  --color-background-5: #dfdfcf;
+  --color-background-5: #eeeeee;
   --color-background-6: #fdfaf6;
   --color-title: #ffffff;
   --color-text: #eeeeee;
