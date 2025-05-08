@@ -4,8 +4,8 @@
 
 ## Ordem de criação
 
-- [x] Criar os arquivos básicos (index.html, style.css, main.js & db.js)
-- [x] Criar uma estrutura mínima em index.html e estilizar o básico em style.css
+- [ ] Criar os arquivos básicos (index.html, style.css, main.js & db.js)
+- [ ] Criar uma estrutura mínima em index.html e estilizar o básico em style.css
 - [ ] Criar a lógica do banco de dados com IndexedDB
 - [ ] Conectar o banco de dados a UI
 - [ ] Melhorar a performance, procurando erros de lógica e usando recursos mais modernos:
@@ -25,23 +25,23 @@
 
 ## O que é preciso?
 
-## Integrar com IndexedDB
+### Gerenciar todas as informações:
 
-- https://www.youtube.com/watch?v=xaXsir6GmB4
-
-### Registrar os Modalidades
-
-- Nome
-  - Nome do modalidade (ex.: Futebol, Vôlei, Basquete)
-- Duração das partidas
-  - Duração em minutos
-- Equipes por grupo
+- Categorias
+  - Nome da categoria (ex.: Feminino, Masculino, Misto)
+- Modalidades
+  - Nome da modalidade (ex.: Futebol, Vôlei, Basquete)
+  - Duração das partidas (em minutos)
   - Quantidade de equipes por grupo
-
-### Registrar as equipes de cada modalidade
-
-- Sala
-  - Nome da sala ou turma da equipe
+- Salas ou Turmas
+  - Nome
+- Equipes
+- Grupos
+  -
+- Horários
+  - Quantidade de dias
+  - Quantidade horários disponíveis em cada dia
+- Configurações
 
 ### Criar os horários dos jogos
 
@@ -51,3 +51,7 @@
     - Intervalo da manhã: 09:00 - 09:20
     - Almoço: 12:00 - 13:00
     - Intervalo da tarde: 15:00 - 15:20
+
+### Integração com IndexedDB
+
+- https://www.youtube.com/watch?v=xaXsir6GmB4
